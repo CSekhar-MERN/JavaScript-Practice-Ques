@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Demo 1</title>
+</head>
+<body>
+    <h2>Map Demo One</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+<button onclick="callMap1()">Call Map1</button>
+<button onclick="callMap2()"> Call Map Set</button>
+<button onclick="callSize()">Call Size</button>
+<button onclick="callForeach()"> Call For Each</button>
+<button onclick="callEntries()">Call Entries</button>
+<button onclick="callHas()">Call Has</button>
+<button onclick="callDelete()">Call Delete</button>
+<script>
+    
+    const fruits = new Map([["Apple", 120],["Banana" ,90],["Grape",95],["Orange", 110]]);
+       
+    function callMap1()
+    {
+         document.getElementById("demo").innerHTML="Price of Grape is  :-"+fruits.get("Grape");
+    }
+    function callMap2()
+    {
+        const fruits1 = new Map();
+        fruits1.set("Apple",120);
+        fruits1.set("Banana",90);
+        fruits1.set("Grape", 95);
+        document.getElementById("demo1").innerHTML="Price of Apple is  :- "+ fruits1.get("Apple");
+    }
+    function callSize()
+    {
+        document.getElementById("demo2").innerHTML="Size of Map fruits  is :- "+ fruits.size;
+    }
+   
+   
+    function callForeach()
+    {
+        let txt="";
+        fruits.forEach(function(value , key)
+        {
+        txt += key + ' = ' + value +"<br>"    
+        })
+        document.getElementById("demo3").innerHTML =txt;
+    }
+    function callEntries()
+    {
+        let txt1 ="";
+        for(const x of fruits.entries())
+        {
+            txt1 += x + "<br>"
+        }
+        document.getElementById("demo4").innerHTML = txt1;
+    }
+    function callHas()
+    {
+        document.getElementById("demo5").innerHTML="Do we have Banana is Map  " + fruits.has("Banana");
+    }
+    function callDelete()
+    {
+        fruits.delete("Orange");
+        document.getElementById("demo6").innerHTML="Price of Orange is :- " + fruits.get("Orange");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Min and Max Demo</title>
+</head>
+<body>
+    <h2>Array Min and Max Demo</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+        <button onclick="callMax()">Call Max </button>
+        <button onclick="callMin()">Call Min</button>
+        <button onclick="callUsermax()">User Max Function</button>
+        <button onclick="callUserMin()">User Mix Function</button>
+    <script>
+        const num=[700 , 2 ,5 ,11 , 95 , 995, 23 , 105 ,855,  705 , 67]
+        document.getElementById("demo").innerHTML =num;
+        function callMax()
+        {
+            document.getElementById("demo1").innerHTML = Math.max.apply(null , num);
+        }
+        function callMin()
+        {
+            document.getElementById("demo2").innerHTML = Math.min.apply(null , num);
+        }
+        function callUsermax()
+        {
+           const mymax= myArrayMax(num);
+           document.getElementById("demo3").innerHTML=mymax;
+        }
+
+        function callUserMin()
+        {
+            const mymin =myArrayMin(num);
+            document.getElementById("demo4").innerHTML=mymin;
+        }
+        function myArrayMax(arr)
+        {
+            let len= arr.length;
+            let max = -Infinity;
+            while(len --)
+            {
+                if(arr[len] > max)
+                {
+                    max=arr[len];
+                }
+            }
+            return max;
+        }
+        function myArrayMin(arr)
+        {
+           
+            let len1  =arr.length;
+            let min = Infinity;
+            while(len1--)
+            {
+                if (arr[len1] < min)
+                {
+                    min =arr[len1];
+                }
+            }
+            return min;
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objejct Demo2</title>
+</head>
+<body>
+    <h2> This second demo of Object with function in it</h2>
+    <div id="demo"></div>
+
+    <button onclick="callObject()">Call Object </button>
+    
+    <script>
+        const person ={
+            firstName :"Triveni",
+            lastName : "Singh", 
+            fullName : function()
+            {
+                return this.firstName+ "    " + this.lastName;
+            }
+        };
+        function callObject()
+        {
+            document.getElementById("demo").innerHTML =person.fullName();
+        }
+    </script>
+</body>
+</html>

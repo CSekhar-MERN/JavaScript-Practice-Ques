@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo19</title>
+</head>
+<body>
+    <h3>This is DOM Demo 19</h3>
+    <div id="info" class="disabled">This is seomething very important  </div>
+    <script>
+        var elem = document.getElementById("info");
+        elem.classList.add("hide");
+        elem.classList.add("highlight");
+        elem.classList.add("important");
+        console.log(elem.className);
+        elem.classList.remove("hide");
+        console.log(elem.className);
+        elem.classList.toggle("visible");
+        console.log(elem.className);
+    </script>
+</body>
+</html>

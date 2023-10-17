@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search Demo1</title>
+</head>
+<body>
+    <h2> String Search Demo</h2>
+    <p id="demo">Please locate where first locate appear</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button onclick="callIndexof()">Call Indexof </button>
+    <button onclick="callLastindexof()">Call LastIndex of </button>
+    <button onclick="callSearch()">Call Search</button>
+    <script>
+        function callIndexof()
+        {
+            let str= document.getElementById("demo").innerHTML;
+            document.getElementById("demo1").innerHTML=str.indexOf("locate");
+        }
+        function callLastindexof()
+        {
+            let str= document.getElementById("demo").innerHTML;
+            document.getElementById("demo2").innerHTML=str.lastIndexOf("locate");
+        }
+        function callSearch()
+        {
+            let str= document.getElementById("demo").innerHTML;
+            document.getElementById("demo3").innerHTML="Locating locate throgh serach function  "+ str.search('locate'); 
+        }
+    </script>
+
+</body>
+</html>

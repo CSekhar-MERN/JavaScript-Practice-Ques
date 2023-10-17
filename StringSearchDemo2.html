@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search Demo2 </title>
+</head>
+<body>
+    <h2> String Search Demo 2</h2>
+    
+<p id="demo">Hello world, welcome to the universe</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<button onclick="callInclude()">Call Include</button>
+<button onclick="callStartwith()">Call Startwith</button>
+<button onclick="callEndwith()">Call Endwith</button>
+<script>
+    function callInclude()
+    {
+        let str=document.getElementById("demo").innerHTML;
+        let result=str.includes("welcome");
+        if(result == true)
+        {
+            document.getElementById("demo1").innerText="welcome found in given string";
+        }
+        else
+        {
+            document.getElementById("demo1").innerText="welcome not found in given string";
+        }
+    }
+    function callStartwith()
+    {
+        let str=document.getElementById("demo").innerHTML;
+        let result=str.startsWith("Hello");
+        if(result == true)
+        {
+            document.getElementById("demo2").innerHTML="Staring start with Hello";
+        }
+    }
+    function callEndwith()
+    {
+        let str=document.getElementById("demo").innerHTML;
+        let result=str.endsWith("universe");
+        if(result==true)
+        {
+            document.getElementById("demo3").innerHTML="String end with universe";
+        }
+    }
+</script>
+</body>
+</html>

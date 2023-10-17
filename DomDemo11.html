@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo11</title>
+</head>
+<body>
+    <h1>DOM Demo Example 11</h1>
+    <p>Dislaying body content</p>
+    <p id="demo"></p>
+    <button onclick="callWrite()">Write Content</button>
+    <script>
+        function callWrite()
+        {
+            document.getElementById("demo").innerHTML = document.body.innerHTML;
+        }
+       
+    </script>
+</body>
+</html>

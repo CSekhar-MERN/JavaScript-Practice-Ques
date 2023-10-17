@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo 24</title>
+</head>
+<body>
+    
+    <h2>DOM Demo 24</h2>
+
+    <div id="main">
+        <h3 id="title">Hello World</h3>
+    </div>
+    <button onclick="insertContent()">Insert Content</button>
+
+    <script>
+
+function insertContent(){
+        var mainDiv= document.getElementById("main");
+        mainDiv.insertAdjacentHTML('beforebegin','<p>This is paragraph one </p>');
+        mainDiv.insertAdjacentHTML('afterbegin','<p>This is second paragraph</p>');
+        mainDiv.insertAdjacentHTML('beforeend','<p>This is third paragraph</p>');
+        mainDiv.insertAdjacentHTML('afterend','<p>This is fourth Paragraph</p>');
+}
+
+    </script>
+
+</body>
+</html>

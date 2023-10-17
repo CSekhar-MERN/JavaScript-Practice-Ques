@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Demo1</title>
+</head>
+<body>
+    <h2>Set Demo One </h2>
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<button onclick="callNum()">Call Num</button>
+<button></button>
+
+<script>
+
+const num1 = new Set(["5","10", "15", "20", "25", "30"]);
+
+console.log(num1);
+
+//document.getElementById("demo").innerHTML="Value of Num is  : -" + num;
+
+function callNum()
+{
+    document.getElementById("demo2").innerHTML ="Value return by values method : -"+num1.values();
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Demo1 </title>
+</head>
+<body>
+        <h2>Date Array Demo 1</h2>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+
+        <button onclick="callDate()"> Call Date</button>
+        <button onclick="callYear()">Call Full Year</button>
+        <button onclick="callMonth()"> Call Month</button>
+        <button onclick="callDatem()"> Call Date of Month</button>
+        <button onclick="callDay()"> Call Day</button>
+        <script>
+            const dt = new Date();
+
+            function callDate()
+            {
+                document.getElementById("demo").innerHTML=dt;
+            }
+            function callYear()
+            {
+                document.getElementById("demo1").innerHTML=dt.getFullYear();
+            }
+            function callMonth()
+            {
+                document.getElementById("demo2").innerHTML=dt.getMonth();
+            }
+            function callDatem()
+            {
+                document.getElementById("demo3").innerHTML=dt.getDate();
+            }
+            function callDay()
+            {
+                document.getElementById("demo4").innerHTML=dt.getDay();
+
+            }
+        </script>
+
+</body>
+</html>

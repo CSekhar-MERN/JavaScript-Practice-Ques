@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sort Demo1</title>
+</head>
+<body>
+    <h2>Array Sort Demo2</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <button onclick="callSortdemo1()">Call Sort Demo</button>
+    <button onclick="callJoin()">Call Sort Demo</button>
+    <button onclick="callShift()"> Call Shift</button>
+    <button onclick="callUnshift()"> Call UnShift</button>
+    <script>
+         const fruits = ["Banana", "Orange", "Apple", "Mango" ,"Pineapple",'Grape'];
+        function callSortdemo1()
+        {
+            document.getElementById("demo").innerHTML="Array Element without sorting   "+ fruits;
+            document.getElementById("demo1").innerHTML="Array ELement after sorting    " + fruits.sort();
+            document.getElementById("demo1").style.backgroundColor="pink";
+        }
+        function callJoin()
+        {
+            document.getElementById("demo2").innerHTML="Array Element after join " + fruits.join(" * ")
+        }
+        function callShift()
+        {   
+            fruits.shift();
+            document.getElementById("demo3").innerHTML="Array Element After Shifting  " + fruits;
+            document.getElementById("demo3").style.backgroundColor="yellow";
+        }
+        function callUnshift()
+        {
+            fruits.unshift("Lemen");
+            document.getElementById("demo4").innerHTML="Array ELement after Unshifting   " +fruits
+        }
+    </script>    
+</body>
+</html>

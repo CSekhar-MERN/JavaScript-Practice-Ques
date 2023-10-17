@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo 25</title>
+</head>
+<body>
+    
+    <h3>DOM Demo 25</h3>
+<div id="main">
+    <h1>This is first heading </h1>
+    <h2>This is second heading </h2>
+    <h3>This is the third heading </h3>
+</div>
+<script>
+    var main = document.getElementById("main");
+    if(main.hasChildNodes())
+    {
+        var node=main.childNodes;
+        console.log(node);
+        for (var i=0 ; i < node.length ; i++)
+        {
+            console.log(node[i].nodeName);
+        }
+    }
+</script>
+
+</body>
+</html>

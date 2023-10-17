@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function Demo2</title>
+</head>
+<body>
+    <h2> String Function Demo2</h2>
+    <p id="demo">I love my dog very much , my dog is very smart and my dog can run very fast</p>
+    <button onclick="callReplaceall()">Replace All</button>
+    <button onclick="callUpper()">Convert into Upper</button>
+    <button onclick="callLower()">Convert into Lower</button>
+    <script>
+        function callReplaceall()
+        {
+            let str=document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=str.replaceAll("dog","cat");
+            
+        }
+        function callUpper()
+        {
+            let str=document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=str.toUpperCase();
+        }
+        function callLower()
+        {
+            let str=document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML=str.toLowerCase();
+        }
+    </script>
+</body>
+</html>

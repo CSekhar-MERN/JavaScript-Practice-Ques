@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo6</title>
+</head>
+<body>
+    <h3>This is DOM Demo6</h3>
+    <div id="div1">
+        <p>This is first Paragraph</p><br>
+        <p>This is second Paragraph</p> <br>
+
+    </div>
+    <button onclick="callAddP()">Add Paragraph</button>
+    <script>
+        function callAddP()
+        {
+            const para = document.createElement("p");
+const node = document.createTextNode("This is third paragraph added by function.");
+para.appendChild(node);
+const element = document.getElementById("div1");
+element.appendChild(para);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demo3</title>
+</head>
+<body>
+    <h2>Array Demo 3</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button onclick="callAddelement()">Adding Element</button>
+    <button onclick="callAddelement2()">Adding Element 2</button>
+
+    <script>
+        function callAddelement()
+        {
+            let fruits=["Apple" ,"Orange","Grape"];
+            document.getElementById("demo").innerHTML=fruits;
+            fruits.push("Papaya");
+            document.getElementById("demo2").innerHTML=fruits;
+        }
+        function callAddelement2()
+        {
+            let fruits=["Apple" ,"Orange","Grape"];
+            fruits[fruits.length]="Lemen";
+            document.getElementById("demo3").innerHTML=fruits;
+        }
+    </script>
+</body>
+</html>

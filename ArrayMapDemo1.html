@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map Demo1 </title>
+</head>
+<body>
+    <h2>Array Map Demo1 </h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    
+    <button onclick="callMap()">Call Map</button>
+
+    <script>
+        const num=[5, 15 , 10 , 45 , 35 , 25 ,95 , 85 ,75];
+        document.getElementById("demo").innerHTML=num;
+        function callMap()
+        {
+            const num2 = num.map(myFunction);
+            document.getElementById("demo1").innerHTML=num2;
+        }
+        function myFunction(value , index , array)
+        {
+            return value*2;
+        }
+
+        document.getElementById("demo2").innerHTML=" Value of number "+num;
+
+
+
+    </script>
+</body>
+</html>

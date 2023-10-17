@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterable Demo1</title>
+</head>
+<body>
+    <h2>Iterable Demo one</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <button onclick="callString()">Call String</button>
+    <button onclick="callArray()">Call Array</button>
+    <script>
+        const name1="W3School";
+        const course=["HTML","CSS","BootStrap" ,"JavaScript","NodeJS"];
+        document.getElementById("demo1").innerHTML="Value of String   :- " + name1;
+        document.getElementById("demo2").innerHTML="Value of Array is  :-" + course;
+
+        let txt1="";
+        let txt2="";
+        function callString()
+        {
+            for (const x of name1)
+            {
+                txt1 += x + "<br>"
+            }
+            document.getElementById("demo3").innerHTML =txt1;
+        }
+
+        function callArray()
+        {
+            for (const y of course)
+            {
+                txt2 += y +"<br>"
+            }
+            document.getElementById("demo4").innerHTML =txt2;
+        }
+
+
+    </script>
+</body>
+</html>

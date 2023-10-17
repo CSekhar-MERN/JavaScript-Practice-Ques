@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo 15</title>
+</head>
+<body>
+<h3>DOM Demo 15</h3>
+<p class="test">This is first paragraph of the page</p>
+<div class="test">This is first div of the page</div>
+<p class="test">This is second Paragraph</p>
+<script>
+
+var match = document.getElementsByClassName("test");
+console.log("No of elemet  + " + match.length);
+match[0].style.fontWeight ="bold";
+for( var elem in match)
+match[elem].style.background="yellow";
+</script>
+</body>
+</html>

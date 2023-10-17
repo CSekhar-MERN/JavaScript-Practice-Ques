@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo5</title>
+</head>
+<body>
+    <h3 id="id1">DOM Demo 5</h3>
+    <p id="id2">Paragraph</p>
+    <p id="id3">Date : </p>
+    <button onclick="changeH3()">Change Heading</button>
+    <button onclick="changeP()">Change Paragraph</button>
+    <button onclick="writeDate()">Write Date</button>
+    <button onclick="callWrite()">Call Write</button>
+    <script>
+
+        function changeH3()
+        {
+            document.getElementById("id1").innerHTML="Welcome to DOM Demo 5";
+        }
+        function changeP()
+        {
+            document.getElementById("id2").innerHTML="Welcome to the Paragraph";
+        }
+        function writeDate()
+        {
+            let x= document.getElementById("id3").innerHTML;
+            x  += Date();
+            document.getElementById("id3").innerHTML = x;
+        }
+        function callWrite()
+        {
+            document.write("Welcome to write method");
+        }
+    </script>
+
+</body>
+</html>

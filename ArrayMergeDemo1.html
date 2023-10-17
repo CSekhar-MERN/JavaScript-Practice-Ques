@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Merge Demo1</title>
+</head>
+<body>
+    <h2>Arry Merge Demo</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <button onclick="callMerge()"> Call Concat </button>
+    <script>
+        
+        const even=[2,4,6,8,10];
+        const odd=[3,5,7,9];
+        document.getElementById("demo").innerHTML="Even Array Element "+even;
+        document.getElementById("demo1").innerHTML="Odd Array Element " + odd;
+        function callMerge()
+        {
+        document.getElementById("demo2").innerHTML="Array Element after merging " + even.concat(odd);
+        }
+       
+
+
+    </script>
+
+</body>
+</html>

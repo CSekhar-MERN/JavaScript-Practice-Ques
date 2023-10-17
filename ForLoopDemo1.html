@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Demo1</title>
+</head>
+<body>
+    <h2>For Loop Demo1 </h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p></p>
+    <button onclick="callFor1()"> Call For Loop 1</button>
+    <button onclick="callFor2()"> Call For Loop 2</button>
+    
+    <script>
+        let txt="";
+        const course =["HTML" ,"CSS","Java Script" ,"DS" ,"Boot Strap" ,"MongoDB","NodeJS","React"];
+        function callFor1()
+        {   
+            for (let i=1 ; i<=5 ; i++)
+            {
+                txt += i +"<br>"
+            }
+            document.getElementById("demo").innerHTML=txt;
+
+        }
+        function callFor2()
+        {
+            txt="";
+            for (let i=0 ; i< course.length ; i++)
+            {
+                txt += course[i] + "<br>";
+            }
+            document.getElementById("demo1").innerHTML=txt;
+        }
+    </script>
+</body>
+</html>

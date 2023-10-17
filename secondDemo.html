@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Demo</title>
+    <script>
+        function selectedItem()
+        {
+            var list = document.forms[0].urlList;
+            location = list.options[list.selectedIndex].value;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h2>Choose The website to visit</h2>
+        <select name="urlList" onchange="selectedItem()">
+        <option selected value="http://google.com"> google
+        <option value="http://yahoo.com">Yahoo
+        <option value="http://rediff.com">Rediff 
+        </select>
+    </form>
+</body>
+</html>

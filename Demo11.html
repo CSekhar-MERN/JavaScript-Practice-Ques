@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Calling Demo</title>
+</head>
+<body>
+    
+    <h2>This is java script function demo</h2>
+    <p id="demo"></p>
+    <button id="btn1" onclick="callMulti()">Call Multiplication Function</button>
+    <script>
+      function callMulti()
+      {
+        console.log("Function is  being called");
+        document.getElementById("demo").innerHTML= add(30, 40);
+        document.getElementById("demo").style.backgroundColor="pink";
+        document.getElementById("demo").style.border="10px solid blue";
+      }
+      function mutli(a , b)
+      {
+        return a* b;
+      }
+        function add(a ,b)
+        {
+            return a+ b;
+        }
+    </script>
+
+</body>
+</html>

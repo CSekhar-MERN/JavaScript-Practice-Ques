@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Function Demo</title>
+</head>
+<body>
+    <h3>Call Function Demo</h3>
+    <p id="demo"></p>
+    <button onclick="CallFullName()">Call Function Demo</button>
+
+    <script>
+    const person1 ={
+        firstName: "Triveni",
+        lastName: "Singh",
+    }
+    const person2 ={
+        fullName : function()
+        {
+            return this.firstName + "  " + this.lastName;
+        }
+    }
+    function CallFullName()
+    {
+        let x=person2.fullName.call(person1);
+        document.getElementById("demo").innerHTML=x;
+        
+    }
+    </script>
+</body>
+</html>

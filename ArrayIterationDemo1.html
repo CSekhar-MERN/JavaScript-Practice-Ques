@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Interation Demo</title>
+</head>
+<body>
+    <h2>Array Interation Demo1</h2>
+    
+    <p id="demo"></p>
+    <p id="demo1"></p>
+   
+    <button onclick="callInteration1()"> Call Interation </button>
+    <script>
+        const num=[4, 3 , 2, 14 , 67 , 85 , 95];
+        let txt ="";
+        document.getElementById("demo").innerHTML=num;
+        function callInteration1()
+        {
+            
+            num.forEach(myFunction);
+            document.getElementById("demo1").innerHTML=txt;
+        }
+        function myFunction(value , index , array)
+        {
+            txt += value +"<br>"
+        }
+    </script>
+</body>
+</html>

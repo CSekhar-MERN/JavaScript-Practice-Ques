@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function Demo3 </title>
+</head>
+<body>
+    <h3> String Function Demo3 </h3>
+    <p id="demo">Edureka Learning</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <button onclick="callConcat()"> Concat Demo</button>
+    <button onclick="callTrim()">Call Trim</button>
+    <script>
+        function callConcat()
+        {
+        let str=document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML=str.concat(" Center");
+        }
+        function callTrim()
+        {
+            let str="            Edureka Learning Centre           "
+            document.getElementById("demo1").innerHTML="Length of String is " + str.length;
+            document.getElementById("demo2").innerHTML="Length of String after trim is  " +str.trim().length;
+            document.getElementById("demo3").innerHTML="Length of String after trim start is " + str.trimStart().length;
+            document.getElementById("demo4").innerHTML="Length of String after trim end is  " + str.trimEnd().length;
+        }
+    </script>
+</body>
+</html>

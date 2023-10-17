@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function ChartAt</title>
+</head>
+<body>
+    <h2> String Function ChartAt </h2>
+    <p id="demo">Edureka Learning Center</p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <button onclick="callChartat()">Call ChartAt</button>
+    <button onclick="callCharcodeat()"> Call CharCodeAt</button>
+    <button onclick="callSplit()"> Call Split</button>
+
+    <script>
+        function callChartat()
+        {
+            let str=document.getElementById("demo").innerHTML;
+            document.getElementById("demo2").innerHTML="Character at Zero is " + str.charAt(0);
+        }
+
+        function callCharcodeat()
+        {
+            let str=document.getElementById("demo").innerHTML;
+            document.getElementById("demo3").innerHTML="Unicode of character at zero is " +str.charCodeAt(0);
+        }
+        function callSplit()
+        {
+            let str=document.getElementById("demo").innerHTML;
+            document.getElementById("demo4").innerHTML="Charater Before Space is " + str.split('');
+
+        }
+    </script>
+
+</body>
+</html>

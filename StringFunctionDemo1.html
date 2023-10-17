@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function Demo</title>
+</head>
+<body>
+    <h2> This is String Function Demo</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4">Please visit Microsoft and Microsoft!</p>
+    
+    <button onclick="callSlice()">Slice Demo</button>
+    <button onclick="callSubstring()">Substring Demo</button>
+    <button onclick="callSubstr()">Substr Demo</button>
+    <button onclick="callReplace()">Replace Demo</button>
+
+    <script>
+        function callSlice()
+        {
+        let text="Apple, Banana , Kiwi";
+        let part=text.slice(7,13);
+        document.getElementById("demo").innerHTML=part;
+        document.getElementById("demo").style.background="brown";
+        }
+        function callSubstring()
+        {
+            let str="Apple, Banana , Kiwi";
+            document.getElementById("demo1").innerHTML=str.substring(7,13);
+            document.getElementById("demo1").style.backgroundColor="pink";
+        }
+       function callSubstr()
+       {
+        let str1="Apple, Banana , Kiwi";
+        document.getElementById("demo2").innerHTML=str1.substr(7,13);
+        document.getElementById("demo2").style.backgroundColor="red";
+       }
+
+       function callReplace()
+       {
+        let str = "I am at MicroSoft ";
+        let str2 =str.replace("MicroSoft", "Edureka Learning Center");
+        document.getElementById("demo3").innerHTML=str2;
+        let text2=document.getElementById("demo4").innerHTML;
+        document.getElementById("demo4").innerHTML=text2.replace(/Microsoft/g,"Edureka");
+
+       }
+    </script>
+
+</body>
+</html>

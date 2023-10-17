@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function Demo</title>
+</head>
+<body>
+    <h3>Arrow Function Demo</h3>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="callArrow1()">Call Arrow1</button>
+    <button onclick="callArrow2()">Call Arraow2</button>
+    <script>
+        let myFunction=(a ,b) => a*b;
+
+        let sayHello =() => "Welcome to Edureka Learning Center"
+        
+        function callArrow1()
+        {
+            document.getElementById("demo").innerHTML =myFunction(  10, 30)
+        }
+        function callArrow2()
+        {
+            document.getElementById("demo1").innerHTML=sayHello();
+            
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo 16</title>
+</head>
+<body>
+    <h3>DOM Demo 16</h3>
+    <ul>
+        <li>Bread</li>
+        <li>Cofee</li>
+        <li>Pineapple Cake</li>
+    </ul>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="callCount()">Count Element</button>
+    <button onclick="callPrint()">Print Element</button>
+    <script>
+         var matches = document.querySelectorAll("ul li");
+         var txt="";
+        function callCount()
+        {
+           
+            document.getElementById("demo").innerHTML="Numbers of elements are  " + matches.length + "<hr>"
+        }
+        function callPrint()
+        {
+            
+            for ( var elem of matches)
+            {
+                  
+                txt += elem.innerHTML +"<br>"
+            }
+             document.getElementById("demo1").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

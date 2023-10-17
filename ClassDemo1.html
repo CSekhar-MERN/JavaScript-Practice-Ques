@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Demo1</title>
+</head>
+<body>
+    <h3>Class Demo1</h3>
+    <p id="demo"></p>
+    <button onclick="callClass()">Call Class </button>
+    <script>
+        class Car{
+            constructor(name , year)
+            {
+                this.name =name;
+                this.year =year;
+            }
+        }
+        const car1 = new Car("Mahindra", 2014);
+        const car2 = new Car("TATA",2018);
+        function callClass()
+        {
+            document.getElementById("demo").innerHTML = car1.name + "   "+car1.year +"   " + car2.name + "  "+car2.year;
+        }
+    </script>
+</body>
+</html>

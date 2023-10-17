@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Demo1 </title>
+</head>
+<body>
+    <h2>Switch Demo1</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="callSwitch()">Call Switch</button>
+    <script>
+        const da=  new Date();
+        document.getElementById("demo").innerHTML=da;
+       function callSwitch()
+       {
+        const d = da.getDay();
+        console.log(d);
+        switch(d)
+        {
+            case 1:
+            document.getElementById("demo1").innerHTML="Week Day";
+            break;
+            case 3:
+            document.getElementById("demo1").innerHTML="Week Day";
+            break;
+            case 4:
+            case 5:
+            document.getElementById("demo1").innerHTML="Weekend Soon ";
+            default:
+            document.getElementById("demo1").innerHTML="Weekend  ";
+
+        }
+       }
+
+    </script>
+</body>
+</html>
